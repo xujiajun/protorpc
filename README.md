@@ -12,9 +12,6 @@
 [![Build Status](https://travis-ci.org/xujiajun/protorpc.svg)](https://travis-ci.org/xujiajun/protorpc)
 [![GoDoc](https://godoc.org/github.com/xujiajun/protorpc?status.svg)](https://godoc.org/github.com/xujiajun/protorpc)
 
-- C++ Version(Proto2): [https://github.com/xujiajun/protorpc.cxx](https://github.com/xujiajun/protorpc.cxx)
-- C++ Version(Proto3): [https://github.com/xujiajun/protorpc3-cxx](https://github.com/xujiajun/protorpc3-cxx)
-- Talks: [Go/C++语言Protobuf-RPC简介](http://go-talks.appspot.com/github.com/xujiajun/talks/xujiajun-protorpc-intro.slide)
 
 # Install
 
@@ -125,6 +122,6 @@ func main() {
 
 # BUGS
 
-Report bugs to <chaishushan@gmail.com>.
+Report bugs to <me@xujiajun.cn>.
 
 Thanks!
