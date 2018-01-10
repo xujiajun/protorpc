@@ -46,7 +46,7 @@ func (p *protorpcPlugin) GenerateImports(file *generator.FileDescriptor) {
 		p.P(`import "net"`)
 		p.P(`import "net/rpc"`)
 		p.P(`import "time"`)
-		p.P(`import protorpc "github.com/chai2010/protorpc"`)
+		p.P(`import protorpc "github.com/xujiajun/protorpc"`)
 	}
 }
 
@@ -292,15 +292,8 @@ func Dial{{.ServiceName}}Timeout(network, addr string, timeout time.Duration) (*
 }
 `
 	const clientMethodTmpl = `
-func (c *{{.ServiceName}}Client) {{.MethodName}}(in *{{.ArgsType}}) (out *{{.ReplyType}}, err error) {
-	if in == nil {
-		in = new({{.ArgsType}})
-	}
-	out = new({{.ReplyType}})
-	if err = c.Call("{{.ServiceRegisterName}}.{{.MethodName}}", in, out); err != nil {
-		return nil, err
-	}
-	return out, nil
+func (c *{{.ServiceName}}Client) {{.MethodName}}(in *{{.ArgsType}}, out *{{.ReplyType}}) error {
+	return c.Call("{{.ServiceRegisterName}}.{{.MethodName}}", in, out)
 }`
 
 	// gen client method list

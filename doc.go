@@ -13,8 +13,8 @@ you must be running version 2.3 or higher.
 
 Finally run
 
-	go get github.com/chai2010/protorpc
-	go get github.com/chai2010/protorpc/protoc-gen-go
+	go get github.com/xujiajun/protorpc
+	go get github.com/xujiajun/protorpc/protoc-gen-go
 
 to install the support library and protocol compiler.
 
@@ -97,10 +97,10 @@ Then it can make a remote call with stub:
 
 More example:
 
-	go test github.com/chai2010/protorpc/internal/service.pb
+	go test github.com/xujiajun/protorpc/internal/service.pb
 
 Report bugs to <chaishushan@gmail.com>.
 
 Thanks!
 */
-package protorpc // import "github.com/chai2010/protorpc"
+package protorpc // import "github.com/xujiajun/protorpc"

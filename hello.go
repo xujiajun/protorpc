@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/chai2010/protorpc"
-	service "github.com/chai2010/protorpc/examples/service.pb"
+	"github.com/xujiajun/protorpc"
+	service "github.com/xujiajun/protorpc/examples/service.pb"
 )
 
 type Echo int
